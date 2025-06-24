@@ -5,10 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR code generator</title>
+
+    <!-- google fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    
+    <!-- QR code CDN -->
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+     <!-- stylesheet -->
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     
+    <div class="wrapper">
+        <input type="text" id="userInput" placeholder="Enter some text or URL">
+
+        <div class="options">
+            <select class="sizeOptions">
+                <option value="100" selected>100 X 100</option>
+                <option value="200">200 X 200</option>
+                <option value="300">300 X 300</option>
+            </select>
+            <input type="color" id="BGcolor" class="color-inp">
+            <input type="color" id="FGcolor" class="color-inp">
+        </div>
+
+        <div class="box">
+            <button id="submit" disabled>Generate</button>
+            <a href="#" id="download">Download</a>
+        </div>
+
+        <div class="container"></div>
+    </div>
 
 <script src="script.js"></script>
 </body>
