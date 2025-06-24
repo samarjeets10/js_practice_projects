@@ -74,10 +74,13 @@ select option {
 }
 
 .color-inp {
-    --webkit-appearance: none;
+    appearance: none;
     background-color: transparent;
     width: 3.1em;
     height: 3.4em;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .color-inp::-webkit-color-swatch {
@@ -127,7 +130,7 @@ select option {
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 0.18em;
+    margin-top: 2.2em;
 }
 
 .hide {
