@@ -1,0 +1,100 @@
+
+/* google fonst */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Root Variables */
+
+:root {
+
+    /* colors */
+
+    --primary-color-dark: #190482;
+    --primary-color-light: #F5F7F8;
+    --secondary-color-01: #8E8FFA;
+    --secondary-color-02: #C2D9FF;
+    --secondary-color-03: #7752FE;
+    --secondary-color-04: #9AA6B2;
+    --neutral-color-01: #DBDBDB;
+}
+
+/* general styling */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-color-01);
+    position: relative;
+}
+
+.wrapper {
+    width: 60vmin;
+    padding: 22px 28px;
+    position: absolute;
+    background-color: var(--secondary-color-04);
+    border: none;
+    border-radius: 18px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.wrapper h2 {
+    font-weight: 28px;
+    color: var(--primary-color-light);
+}
+
+.input-wrapper {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: var(--primary-color-light);
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 18px;
+    color: var(--secondary-color-04);
+    font-weight: 600;
+}
+
+.input-wrapper button {
+    padding: 8px 12px;
+    background-color: var(--secondary-color-03);
+    border: none;
+    outline: none;
+    color: var(--primary-color-light);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+}
+
+.input-wrapper button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+
+
+
