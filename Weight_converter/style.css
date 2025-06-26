@@ -9,13 +9,13 @@
 
     /* colors */
 
-    --primary-color-dark: #190482;
-    --primary-color-light: #F5F7F8;
-    --secondary-color-01: #8E8FFA;
-    --secondary-color-02: #C2D9FF;
-    --secondary-color-03: #7752FE;
-    --secondary-color-04: #9AA6B2;
-    --neutral-color-01: #DBDBDB;
+    --primary-color-dark: #2C3930;
+    --primary-color-light: #F2F2F2;
+    --secondary-color-dark: #B6B09F;
+    --secondary-color-light: #EAE4D5;
+    --neutral-color-10: #DDDDDD;
+    --neutral-color-20: #EEEEEE;
+    --dark-color-10: #31363F;
 }
 
 /* general styling */
@@ -37,7 +37,7 @@ body {
 .main {
     height: 100%;
     width: 100%;
-    background-color: var(--secondary-color-01);
+    background-color: var(--primary-color-dark);
     position: relative;
 }
 
@@ -45,7 +45,7 @@ body {
     width: 60vmin;
     padding: 22px 28px;
     position: absolute;
-    background-color: var(--secondary-color-04);
+    background-color: var(--primary-color-light);
     border: none;
     border-radius: 18px;
     transform: translate(-50%, -50%);
@@ -55,7 +55,7 @@ body {
 
 .wrapper h2 {
     font-weight: 28px;
-    color: var(--primary-color-light);
+    color: var(--dark-color-10);
 }
 
 .input-wrapper {
@@ -69,19 +69,25 @@ body {
 
 .input-wrapper input {
     width: 100%;
-    padding: 8px 12px;
+    padding: 8px 16px;
     background-color: var(--primary-color-light);
-    border: none;
+    border: 1px solid var(--secondary-color-dark);
     border-radius: 6px;
     outline: none;
-    font-size: 18px;
-    color: var(--secondary-color-04);
+    font-size: 17px;
+    color: var(--dark-color-10);
     font-weight: 600;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--secondary-color-dark);
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .input-wrapper button {
     padding: 8px 12px;
-    background-color: var(--secondary-color-03);
+    background-color: var(--secondary-color-dark);
     border: none;
     outline: none;
     color: var(--primary-color-light);
@@ -89,11 +95,65 @@ body {
     font-weight: 600;
     border-radius: 6px;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .input-wrapper button:hover {
     background-color: var(--primary-color-dark);
 }
+
+.unit-wrapper {
+    width: 100%;
+    margin-top: 18px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.unit-wrapper select {
+    height: 34px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: var(--primary-color-dark);
+    outline: none;
+    border: 1px solid var(--secondary-color-dark);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.unit-wrapper select option {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+.unit-wrapper .icon-box {
+    font-size: 18px;
+    color: var(--primary-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.result-wrapper {
+    width: 100%;
+    margin-top: 24px;
+    padding: 8px 16px;
+    border-top: 2px solid var(--secondary-color-light);
+    text-align: center;
+}
+
+.result-wrapper p {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--dark-color-10);
+}
+
+
 
 
 
