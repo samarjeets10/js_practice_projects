@@ -12,9 +12,9 @@
 <body>
     
     <main>
-        <form action="">
-            <input type="text" placeholder="Search" autocomplete="off" id="valueSearch">
-            <button>
+        <form action="submit" class="form">
+            <input type="text" placeholder="Search" autocomplete="off" id="inputSearch">
+            <button id="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </form>
@@ -31,7 +31,7 @@
                     <sup>o</sup>
                 </figcaption>
             </figure>
-            <p class="discrition">
+            <p class="description">
                 Overcast clouds
             </p>
 
@@ -54,6 +54,11 @@
             </ul>
         </section>
     </main>
+
+    <div class="popUp">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p class="errorText">Sorry, Something went wrong !</p>
+    </div>
 
 <script src="script.js"></script>
 </body>
