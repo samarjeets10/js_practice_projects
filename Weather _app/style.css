@@ -34,7 +34,7 @@ main {
     width: 300px;
     height: max-content;
     min-height: 300px;
-    background-color: #f7f7f7;
+    background-color: #f1efef;
     border-radius: 28px;
     box-shadow: 0 30px 50px #5553;
     padding: 30px;
@@ -43,10 +43,17 @@ main {
 
 main form{
     width: 100%;
+    padding: 0px 8px;
     border: 1px solid #5553;
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
+}
+
+main form input {
+    width: 100%;
+    font-size: 16px;
+    color: #555;
 }
 
 main form input,
@@ -61,4 +68,66 @@ main form i {
     font-size: 18px;
     opacity: 0.5;
     cursor: pointer;
+}
+
+.result {
+    padding-top: 20px;
+    text-align: center;
+}
+
+main .result .name {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.result .name img {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 40px;
+}
+
+main .temperature img {
+    width: 150px;
+    filter: drop-shadow(0 10px 50px #0009);
+}
+
+main .temperature figcaption {
+    font-size: 3em;
+}
+
+main .discrition {
+    padding: 18px 0 30px;
+}
+
+main ul {
+    list-style: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+main ul li {
+    background: rgba(7, 7, 7, 0.32);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.194);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(17, 17, 16, 0.06);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: small;
+}
+
+main li i {
+    font-size: 2em;
+    display: block!important;
+    margin: 16px 0;
 }
