@@ -26,7 +26,7 @@ form.addEventListener('submit', (event) => {
 
 // API id and url //
 
-let key = '55b585caf3115e4c8829bc9469651c8f';
+let key = 'API key Here';
 let url = 'https://api.openweathermap.org/data/2.5/weather';
 
 

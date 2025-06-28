@@ -14,6 +14,8 @@
     --border-color: ;
 }
 
+/* general style */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +31,9 @@ body {
     justify-content: center;
     align-items: center;;
 }
+
+
+/* main-wrapper */
 
 main {
     width: 300px;
@@ -132,6 +137,9 @@ main li i {
     margin: 16px 0;
 }
 
+
+/* Error pop-up */
+
 .popUp {
     position: absolute;
     top: 20px;
@@ -145,6 +153,7 @@ main li i {
     background: rgba(255, 0, 0, 0.148);
     animation: move 0.5s ease 1 forwards;
 }
+
 
 .popUp i {
     font-size: 1.27em;
