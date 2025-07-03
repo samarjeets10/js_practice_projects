@@ -7,13 +7,13 @@
 /* root variables */
 
 :root {
-    --body-BG-color: #007BFF;
+    --body-BG-color: #212121;
     --wrapper-BG-color: #f0f0f0;
     --input-BG-color: #f0f0f0;
     --input-border-color: #b3b3b3;
-    --input-focus-border-color: #007BFF;
-    --title-color: #333;
-    --text-color: #c0c0c0;
+    --title-color: #303030;
+    --text-color: #505050;
+    --check-mark-color: #16cf31;
 }
 
 /* general styling */
@@ -104,6 +104,18 @@ body {
 
 .requirement-list span {
     margin-left: 8px;
+}
+
+
+/* Check mark style */
+
+.requirement-list li.valid i {
+    font-size: 1.1rem;
+    color: var(--check-mark-color);
+}
+
+.requirement-list li.valid span {
+    color: var(--check-mark-color);
 }
 
 
