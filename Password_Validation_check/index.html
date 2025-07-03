@@ -5,11 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Validation Checker</title>
+
+    <!-- fonts awesome link cdn -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- style css file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
+    <div class="wrapper">
+        <div class="password-field">
+            <input type="text" placeholder="Enter your password" id="password">
+            <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="content">
+            <p>Password must contains</p>
+            <ul class="requirement-list">
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 8 characters</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 Number (0...9)</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 lowercase letter (a...z)</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 uppercase letter (A...Z)</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 special character (!...$)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 <script src="script.js"></script>
 </body>
